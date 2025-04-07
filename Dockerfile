@@ -7,10 +7,6 @@ WORKDIR /app
 # Copy all files into the container
 COPY . .
 
-# Copy nginx
-
-COPY ./xpath-diner/js /usr/share/nginx/html/js
-
 
 # Install http-server globally
 RUN npm install -g http-server
